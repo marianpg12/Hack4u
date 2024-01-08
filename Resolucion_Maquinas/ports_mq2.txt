@@ -1,0 +1,5 @@
+# Nmap 7.93 scan initiated Thu Jan  4 12:41:25 2024 as: nmap -p- --open -T5 -vvv -n -Pn -oG ports_mq2.txt 192.168.1.62
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.62 ()	Status: Up
+Host: 192.168.1.62 ()	Ports: 21/open/tcp//ftp///, 25/open/tcp//smtp///, 80/open/tcp//http///, 8081/open/tcp//blackice-icecap///	Ignored State: closed (65531)
+# Nmap done at Thu Jan  4 12:41:26 2024 -- 1 IP address (1 host up) scanned in 1.36 seconds

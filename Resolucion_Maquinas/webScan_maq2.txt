@@ -1,0 +1,15 @@
+# Nmap 7.93 scan initiated Thu Jan  4 13:08:41 2024 as: nmap --script http-enum -p80,8081 -oN webScan_maq2.txt 192.168.1.62
+Nmap scan report for 192.168.1.62
+Host is up (0.00036s latency).
+
+PORT     STATE SERVICE
+80/tcp   open  http
+| http-enum: 
+|   /robots.txt: Robots file
+|   /phpmyadmin/: phpMyAdmin
+|   /cards/: Potentially interesting folder
+|   /includes/: Potentially interesting folder
+|_  /install/: Potentially interesting folder
+8081/tcp open  blackice-icecap
+
+# Nmap done at Thu Jan  4 13:08:42 2024 -- 1 IP address (1 host up) scanned in 0.71 seconds

@@ -1,0 +1,23 @@
+# Nmap 7.93 scan initiated Thu Jan  4 12:45:28 2024 as: nmap -sC -sV -p21,25,80,8081 -oN scripts_mq2.txt 192.168.1.62
+Nmap scan report for 192.168.1.62
+Host is up (0.00035s latency).
+
+PORT     STATE SERVICE VERSION
+21/tcp   open  ftp     vsftpd 2.0.8 or later
+25/tcp   open  smtp    Postfix smtpd
+|_smtp-commands: casino.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=casino
+| Subject Alternative Name: DNS:casino
+| Not valid before: 2018-11-17T20:14:11
+|_Not valid after:  2028-11-14T20:14:11
+80/tcp   open  http    Apache httpd 2.4.25 ((Debian))
+|_http-title: Site doesn't have a title (text/html).
+| http-robots.txt: 2 disallowed entries 
+|_/cards /kboard
+|_http-server-header: Apache/2.4.25 (Debian)
+8081/tcp open  http    PHP cli server 5.5 or later
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jan  4 12:45:58 2024 -- 1 IP address (1 host up) scanned in 29.85 seconds

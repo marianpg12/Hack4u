@@ -1,0 +1,5 @@
+# Nmap 7.93 scan initiated Tue Jan  2 14:18:27 2024 as: nmap -p- --open -T5 -vvv -n -oG IMF.txt 192.168.1.91
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.1.91 ()	Status: Up
+Host: 192.168.1.91 ()	Ports: 80/open/tcp//http///	Ignored State: filtered (65534)
+# Nmap done at Tue Jan  2 14:19:20 2024 -- 1 IP address (1 host up) scanned in 52.86 seconds
